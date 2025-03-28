@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tetris War</title>
+  <style>
+    body {
+      background: #111;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: white;
+      font-family: monospace;
+    }
+    canvas {
+      border: 1px solid white;
+    }
+  </style>
+</head>
+<body>
+
+  <div>
+    <h1 style="text-align: center;">Tetris War</h1>
+    <canvas id="tetris" width="200" height="400"></canvas>
+    <div style="text-align:center; margin-top:1rem;">
+      <h3>Next Piece</h3>
+      <canvas id="preview" width="80" height="80" style="border:1px solid white;"></canvas>
+    </div>
+    
+    <div id="gameOver" style="display:none; text-align:center; font-size:2rem; color:#f55; margin-top:1rem;">
+      💀 Game Over! Press Enter to restart.
+    </div>
+    
+  </div>
+  <div id="score" style="text-align: center; font-size: 1.2rem;">Score: 0</div>
+
+  <script src="tetris.js"></script>
+</body>
+</html>
